@@ -15,6 +15,24 @@ body {
   overflow: hidden;
 }
 
+.theme-select {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  font-size: 16px;
+  font-family: inherit;
+  margin: 30px;
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .form {
   display: flex;
   flex-direction: row;
@@ -26,9 +44,16 @@ body {
   border: 2px solid black;
   border-radius: 50%;
   color: crimson;
+  font-size: 18px;
+  font-weight: bolder;
   margin: 5px;
   padding: 10px;
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   text-align: center;
+}
+
+label {
+  font-size: 24px;
+  transform: translateY(30%);
 }
