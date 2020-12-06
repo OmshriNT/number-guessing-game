@@ -8,20 +8,27 @@
     
 </head>
 <body>
-    <div class="form">
-        <label for="guessField">Enter a guess:</label>
-        <input type="text" id="guessField"  class="guessField" >
-        <input type="submit" value="Submit value" class="guessSubmit">
+    <div class="game-room">
+        <h1 style="text-align: center;">Select a theme you like!</h1>
+        <div class="theme-select">
+            <button id="red">red</button>
+            <button id="green">green</button>
+            <button id="blue">blue</button>
+        </div>
+        <div class="form">
+            <label for="guessField">Enter a guess:</label>
+            <input type="text" id="guessField"  class="guessField" >
+            <input type="submit" value="Submit value" class="guessSubmit">
 
-        <div class="counter"></div>
+            <div class="counter"></div>
+        </div>
+
+        <div class="resultParas">
+            <p class="guesses"></p>
+            <p class="lastResult"></p>
+            <p class="lowOrHi"></p>
+        </div>
     </div>
-
-    <div class="resultParas">
-        <p class="guesses"></p>
-        <p class="lastResult"></p>
-        <p class="lowOrHi"></p>
-    </div>
-
 
     <script src="./script.js"></script>
 </body>
