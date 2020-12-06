@@ -1,3 +1,22 @@
+// Theme Select
+const gameRoom = document.querySelector('.game-room');
+const redBtn = document.getElementById('red');
+const greenBtn = document.getElementById('green');
+const blueBtn = document.getElementById('blue');
+
+redBtn.addEventListener('click', () => {
+  gameRoom.style.backgroundColor = 'red';
+})
+
+greenBtn.addEventListener('click', () => {
+  gameRoom.style.backgroundColor = 'green';
+})
+
+blueBtn.addEventListener('click', () => {
+  gameRoom.style.backgroundColor = 'blue';
+})
+
+// Guess Game logic
 let randomNumber = Math.floor(Math.random() * 100) + 1;
 
 const guesses = document.querySelector('.guesses');
@@ -54,7 +73,7 @@ function setGameOver() {
   guessField.disabled = true;
   guessSubmit.disabled = true;
   resetButton = document.createElement('button');
-  resetButton.textContent = 'start game';
+  resetButton.textContent = 'Play another game';
   document.body.append(resetButton);
   resetButton.addEventListener('click', resetGame);
 }
