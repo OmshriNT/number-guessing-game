@@ -14,5 +14,9 @@ concepts used:
 
 - JS
 
-First prototype.
+* UPDATES
+
+-- Feature added: user can select a theme color for the game room(space).
+
+Second prototype.
 Still updating with new features.
